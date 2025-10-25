@@ -7,6 +7,6 @@ router.get('/', (req, res) => {
   res.send('Ça marche !');
 });
 
-router.use('/members', membersRoutes);
+router.use('/member', membersRoutes);
 
 module.exports = router;

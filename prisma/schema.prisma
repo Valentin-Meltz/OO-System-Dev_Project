@@ -19,20 +19,29 @@ model Address {
 }
 
 model Membership {
-  id      Int     @id @default(autoincrement())
-  name    String  @unique
-  price   Float
+  id          Int     @id @default(autoincrement())
+  name        String  @unique
+  price       Float
 
-  members Member[]
+  members     Member[]
 }
 
 model Licence {
-  id      Int     @id @default(autoincrement())
-  number  String  @unique
-  type    String
-  price   Float
+  id          Int     @id @default(autoincrement())
+  number      String  @unique
+  type        String
+  price       Float
 
-  member  Member?
+  member      Member?
+}
+
+model Contact {
+  id          Int       @id @default(autoincrement())
+  firstname   String
+  lastname    String
+  phoneNumber String
+
+  members     Member[]
 }
 
 model Member {
@@ -41,23 +50,26 @@ model Member {
   firstname   String
   lastname    String
   birthdate   DateTime
+  phoneNumber String
   equipment   Boolean
 
   addressId   Int
   membershipId Int
   licenceId   Int?      @unique
+  contactId   Int
 
   address     Address    @relation(fields: [addressId], references: [id])
   membership  Membership @relation(fields: [membershipId], references: [id])
   licence     Licence?   @relation(fields: [licenceId], references: [id])
+  Contact     Contact    @relation(fields: [contactId], references: [id])
 }
 
 model Competition {
-  id        Int       @id @default(autoincrement())
-  club      String
-  date      DateTime
+  id          Int       @id @default(autoincrement())
+  club        String
+  date        DateTime
 
   addressId Int
 
-  address   Address   @relation(fields: [addressId], references: [id])
+  address     Address   @relation(fields: [addressId], references: [id])
 }
