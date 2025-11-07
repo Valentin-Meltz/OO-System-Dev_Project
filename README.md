@@ -10,7 +10,6 @@ This backend porject is use for web application of subscriber manager. Here, you
 │   ├── generated/           # Prisma generated you have to generated locally  
 │   ├── routes            
 │   │   ├── db/              # Database route files 
-│   │   ├── helloAsso/       # HelloAsso's api route file 
 │   │   ├── index.js         # Main routes files
 │   ├── env.js.              # Environnement backend variable 
 │   ├── index.js             # Entry point 
