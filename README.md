@@ -61,3 +61,42 @@ npx prisma generate
 ```
 
 ## Routes
+### /member
+* /all
+* /:id
+* /:email
+* /delete/:id
+* /create
+* update/:id
+
+### /membership 
+* /all
+* /:id
+* /:name
+* /add
+
+### /licence
+* /all
+* /:id
+* /:number
+* /:types
+* /add
+
+### /contact
+* /name
+* /:phoneNumber
+* /add
+
+### /competition
+* /all
+* /:id
+* /byClub/:club
+* /byDate/:date
+* /byAddress/:addressId
+* /add
+
+### /address
+* /all
+* /:id
+* /getId
+* /add
