@@ -1,12 +1,13 @@
 # [ST2OOS] - OO Systems Development
 
-This backend porject is use for web application of subscriber manager. Here, you can add and see you members with there licence, data, and membership. You can also see the competition list to subscribe with all the information as need about competition.
+This backend project is use for web application of subscriber manager. Here, you can add and see you members with there licence, data, and membership. You can also see the competition list to subscribe with all the information as need about competition.
 
 ## Project structure
 ```
 ├── node_modules             # Project module you have to import locally
 ├── prisma                   # Prisma schema and migration
-├── src/ 
+├── src/
+│   ├── seed.js              # Data fixtures 
 │   ├── generated/           # Prisma generated you have to generated locally  
 │   ├── routes            
 │   │   ├── db/              # Database route files 
@@ -17,7 +18,7 @@ This backend porject is use for web application of subscriber manager. Here, you
 ├── .example.env             # Local envrionnement example variable 
 ├── .env                     # Local environnement variable 
 ├── .gitignore.              # Gitignore file 
-├── docker-compose           # Docker-comppse to create your database container 
+├── docker-compose           # Docker-compose to create your database container 
 ├── package-lock.json        # Lock json configuration 
 ├── package.json             # Json configuration 
 └── README.md                # Marckdown file 
@@ -58,6 +59,7 @@ npm install @prisma/client
 ```
 npx prisma migrate dev --name init
 npx prisma generate
+npm run seed
 ```
 
 ## Routes
