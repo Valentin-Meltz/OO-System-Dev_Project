@@ -9,7 +9,7 @@ const competitionsRoutes = require('./db/competition.js');
 const addressRoutes = require('./db/address.js');
 
 router.get('/', (req, res) => {
-  res.send('Ça marche !');
+  res.send('Efrei 2025 project developed by Valentin Meltz and Paul Monie')
 });
 
 router.use('/member', membersRoutes);
