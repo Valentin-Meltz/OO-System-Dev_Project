@@ -5,9 +5,9 @@ This backend project is use for web application of subscriber manager. Here, you
 ## Project structure
 ```
 ├── node_modules             # Project module you have to import locally
-├── prisma                   # Prisma schema and migration
-├── src/
-│   ├── seed.js              # Data fixtures 
+├── prisma/                  # Prisma schema and migration
+│   ├── seed.js              # Data fixtures
+├── src/ 
 │   ├── generated/           # Prisma generated you have to generated locally  
 │   ├── routes            
 │   │   ├── db/              # Database route files 
