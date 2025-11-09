@@ -1,5 +1,7 @@
 # [ST2OOS] - OO Systems Development
 
+You can access the API here: https://api.systemsdev.plmpro.fr
+
 This backend project is use for web application of subscriber manager. Here, you can add and see you members with there licence, data, and membership. You can also see the competition list to subscribe with all the information as need about competition.
 
 ## Project structure
